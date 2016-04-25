@@ -2,6 +2,7 @@ package structuralPatterns.builder;
 
 import structuralPatterns.Shape;
 import structuralPatterns.ShapeDecorator;
+import structuralPatterns.coordinates.Dimensions;
 import structuralPatterns.shape.Rectangle;
 
 /**
@@ -11,8 +12,8 @@ public class ShapeBuilder {
 
     private Shape mainShape;
 
-    public ShapeBuilder aRectangle() {
-        mainShape = new Rectangle();
+    public ShapeBuilder aRectangle(Dimensions dimensions) {
+        mainShape = new Rectangle(dimensions);
         return this;
     }
 

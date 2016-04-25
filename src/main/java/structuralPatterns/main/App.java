@@ -1,13 +1,11 @@
 package structuralPatterns.main;
 
-import structuralPatterns.coordinates.Position;
-import structuralPatterns.figure.Figure;
-import structuralPatterns.decorators.Border;
-import structuralPatterns.decorators.Shade;
-import structuralPatterns.shape.Circle;
-import structuralPatterns.shape.Rectangle;
 import structuralPatterns.Shape;
 import structuralPatterns.builder.ShapeBuilder;
+import structuralPatterns.coordinates.Dimensions;
+import structuralPatterns.coordinates.Position;
+import structuralPatterns.decorators.Border;
+import structuralPatterns.decorators.Shade;
 
 public class App {
 
@@ -22,15 +20,19 @@ public class App {
         Position position = new Position(yposition, xposition);
 
 
+        int height = 250;
+        int width = 400;
+        Dimensions dimensions = new Dimensions(width, height) ;
         Shape complexShape = new ShapeBuilder()
-                .aRectangle()
+                .aRectangle(dimensions)
                 .with(new Border())
                 .with(new Shade()).build();
 
         complexShape.drawAt(position);
 
         Position figurePosition = new Position(2, 3);
-        new Figure(complexShape, figurePosition);
+//        Figure figure = new Figure(complexShape, figurePosition);
+
 
         System.out.println();
     }
