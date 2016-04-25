@@ -9,7 +9,18 @@ public class App {
     }
 
     public void runIt(Position position) {
-        new Shade(new Border(new Rectangle())).drawAt(position);
+
+        new ShapeBuilder()
+                .aRectangle()
+                .with(new Border())
+                .with(new Shade()).build()
+                .drawAt(position);
+
+        System.out.println();
+
+        new Shade(new Border(new Rectangle()))
+                .drawAt(position);
+
         System.out.println();
         new Rectangle().drawAt(position);
         System.out.println();

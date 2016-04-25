@@ -5,4 +5,5 @@ import shapes.Position;
  */
 public interface Shape {
     void drawAt(Position position);
+
 }
