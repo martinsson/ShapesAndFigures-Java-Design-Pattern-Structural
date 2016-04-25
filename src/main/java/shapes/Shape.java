@@ -1,4 +1,6 @@
-import shapes.Position;
+package shapes;
+
+import coordinates.Position;
 
 /**
  * Created by johan on 25/04/16.

@@ -1,3 +1,9 @@
+package builder;
+
+import shape.decorators.ShapeDecorator;
+import shapes.Rectangle;
+import shapes.Shape;
+
 /**
  * Created by johan on 25/04/16.
  */

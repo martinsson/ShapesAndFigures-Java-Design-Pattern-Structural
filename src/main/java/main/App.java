@@ -1,4 +1,13 @@
-import shapes.Position;
+package main;
+
+import coordinates.Position;
+import figure.Figure;
+import shape.decorators.Border;
+import shape.decorators.Shade;
+import shapes.Circle;
+import shapes.Rectangle;
+import shapes.Shape;
+import builder.ShapeBuilder;
 
 public class App {
 

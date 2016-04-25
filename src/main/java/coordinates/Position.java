@@ -1,4 +1,4 @@
-package shapes;
+package coordinates;
 
 public class Position {
     private final int yposition;
