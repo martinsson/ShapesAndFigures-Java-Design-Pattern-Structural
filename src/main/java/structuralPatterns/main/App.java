@@ -3,11 +3,11 @@ package structuralPatterns.main;
 import structuralPatterns.Shape;
 import structuralPatterns.builder.ShapeBuilder;
 import structuralPatterns.coordinates.Dimensions;
-import structuralPatterns.coordinates.Position;
+import structuralPatterns.Position;
 import structuralPatterns.decorators.Border;
 import structuralPatterns.decorators.Shade;
-import structuralPatterns.figure.CompositeFigure;
-import structuralPatterns.figure.LeafFigure;
+import structuralPatterns.figures.CompositeFigure;
+import structuralPatterns.figures.LeafFigure;
 
 public class App {
 

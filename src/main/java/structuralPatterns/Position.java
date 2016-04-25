@@ -1,4 +1,4 @@
-package structuralPatterns.coordinates;
+package structuralPatterns;
 
 public class Position {
     private final int yposition;

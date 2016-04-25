@@ -1,8 +1,8 @@
-package structuralPatterns.shape;
+package structuralPatterns.shapes;
 
 import structuralPatterns.Shape;
 import structuralPatterns.coordinates.Dimensions;
-import structuralPatterns.coordinates.Position;
+import structuralPatterns.Position;
 
 /**
  * Created by johan on 25/04/16.

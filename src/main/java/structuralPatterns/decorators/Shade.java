@@ -1,7 +1,7 @@
 package structuralPatterns.decorators;
 
 import structuralPatterns.ShapeDecorator;
-import structuralPatterns.coordinates.Position;
+import structuralPatterns.Position;
 import structuralPatterns.Shape;
 
 /**

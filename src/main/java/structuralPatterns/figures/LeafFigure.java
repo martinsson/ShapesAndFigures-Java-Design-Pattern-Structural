@@ -1,6 +1,6 @@
-package structuralPatterns.figure;
+package structuralPatterns.figures;
 
-import structuralPatterns.coordinates.Position;
+import structuralPatterns.Position;
 import structuralPatterns.Shape;
 
 /**
@@ -17,7 +17,7 @@ public class LeafFigure implements Shape {
     }
 
     public void drawAt(Position position) {
-        System.out.println("Drawing figure at " + figurePosition);
+        System.out.println("Drawing figures at " + figurePosition);
         System.out.println(" Containing ");
         shape.drawAt(position);
     }

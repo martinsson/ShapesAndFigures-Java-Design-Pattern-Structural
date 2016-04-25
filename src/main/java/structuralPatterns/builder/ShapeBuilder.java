@@ -1,11 +1,10 @@
 package structuralPatterns.builder;
 
-import com.oracle.webservices.internal.api.message.ContentType;
 import structuralPatterns.Shape;
 import structuralPatterns.ShapeDecorator;
 import structuralPatterns.coordinates.Dimensions;
-import structuralPatterns.shape.Circle;
-import structuralPatterns.shape.Rectangle;
+import structuralPatterns.shapes.Circle;
+import structuralPatterns.shapes.Rectangle;
 
 /**
  * Created by johan on 25/04/16.
