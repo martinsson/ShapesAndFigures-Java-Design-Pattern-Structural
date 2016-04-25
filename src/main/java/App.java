@@ -3,24 +3,26 @@ import shapes.Position;
 public class App {
 
     public static void main(String...args) {
-        int yposition = 0;
-        int xposition = 0;
-        new App().runIt(new Position(yposition, xposition));
+        new App().runIt();
     }
 
-    public void runIt(Position position) {
+    public void runIt() {
         int height = 44;
         int width = 30;
         Dimensions dimensions = new Dimensions(width, height);
         Rectangle rectangle = new Rectangle(dimensions);
-        int radius = 3;
-        Circle circle = new Circle(radius);
 
+        int yposition = 0;
+        int xposition = 0;
+        Position position = new Position(yposition, xposition);
         drawShape(position, rectangle);
-        drawShape(position, circle);
+
+
+        drawShape(position, new Circle(10));
     }
 
     private void drawShape(Position position, Shape rectangle) {
+
         rectangle.drawAt(position);
     }
 

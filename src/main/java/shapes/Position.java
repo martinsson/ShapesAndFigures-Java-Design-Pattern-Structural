@@ -20,8 +20,8 @@ public class Position {
     @Override
     public String toString() {
         return "Position{" +
-                "yposition=" + yposition +
-                ", xposition=" + xposition +
+                "y=" + yposition +
+                ", x=" + xposition +
                 '}';
     }
 }
