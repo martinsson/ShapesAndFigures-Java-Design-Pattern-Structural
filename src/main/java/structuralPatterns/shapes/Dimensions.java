@@ -1,4 +1,4 @@
-package structuralPatterns.coordinates;
+package structuralPatterns.shapes;
 
 /**
  * Created by johan on 25/04/16.

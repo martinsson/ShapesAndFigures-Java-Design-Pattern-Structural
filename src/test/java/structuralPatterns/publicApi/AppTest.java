@@ -1,8 +1,6 @@
-package structuralPatterns.main;
+package structuralPatterns.publicApi;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by johan on 25/04/16.

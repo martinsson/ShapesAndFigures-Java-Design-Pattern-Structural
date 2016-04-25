@@ -1,7 +1,6 @@
 package structuralPatterns.shapes;
 
 import structuralPatterns.Shape;
-import structuralPatterns.coordinates.Dimensions;
 import structuralPatterns.Position;
 
 /**

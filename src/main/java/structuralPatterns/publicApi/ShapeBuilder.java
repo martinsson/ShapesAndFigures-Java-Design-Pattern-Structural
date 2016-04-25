@@ -1,8 +1,8 @@
-package structuralPatterns.builder;
+package structuralPatterns.publicApi;
 
 import structuralPatterns.Shape;
 import structuralPatterns.ShapeDecorator;
-import structuralPatterns.coordinates.Dimensions;
+import structuralPatterns.shapes.Dimensions;
 import structuralPatterns.shapes.Circle;
 import structuralPatterns.shapes.Rectangle;
 
@@ -19,7 +19,6 @@ public class ShapeBuilder {
     }
 
     public ShapeBuilder with(ShapeDecorator shapeDecorator) {
-
         shapeDecorator.setShape(mainShape);
         mainShape =shapeDecorator;
         return this;

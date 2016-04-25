@@ -1,8 +1,7 @@
-package structuralPatterns.main;
+package structuralPatterns.publicApi;
 
 import structuralPatterns.Shape;
-import structuralPatterns.builder.ShapeBuilder;
-import structuralPatterns.coordinates.Dimensions;
+import structuralPatterns.shapes.Dimensions;
 import structuralPatterns.Position;
 import structuralPatterns.decorators.Border;
 import structuralPatterns.decorators.Shade;
