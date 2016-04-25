@@ -10,11 +10,17 @@ public class App {
 
     public void runIt(Position position) {
 
-        new ShapeBuilder()
+
+
+        Shape complexShape = new ShapeBuilder()
                 .aRectangle()
                 .with(new Border())
-                .with(new Shade()).build()
-                .drawAt(position);
+                .with(new Shade()).build();
+
+        complexShape.drawAt(position);
+
+        Position figurePosition = new Position(2, 3);
+        new Figure(complexShape, figurePosition);
 
         System.out.println();
 
