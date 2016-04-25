@@ -10,6 +10,7 @@ import structuralPatterns.figure.LeafFigure;
 
 public class App {
 
+
     public static void main(String...args) {
         App app = new App();
         app.runIt();
@@ -24,17 +25,27 @@ public class App {
         int height = 250;
         int width = 400;
         Dimensions dimensions = new Dimensions(width, height) ;
-        Shape complexShape = new ShapeBuilder()
+        Shape complexRectangle = new ShapeBuilder()
                 .aRectangle(dimensions)
                 .with(new Border())
-                .with(new Shade()).build();
+                .with(new Shade())
+                .build();
 
         Position figurePosition = new Position(1, 1);
-        LeafFigure figure = new LeafFigure(complexShape, figurePosition);
+        LeafFigure figure = new LeafFigure(complexRectangle, figurePosition);
+        int radius = 40;
+        Shape complexCircle = new ShapeBuilder()
+                .aCircle(radius)
+                .with(new Border())
+                .with(new Shade())
+                .build();
+        LeafFigure figure2 = new LeafFigure(complexCircle, figurePosition);
+
+
+        figure2.drawAt(position);
+        System.out.println();
 
         figure.drawAt(position);
-
-
         System.out.println();
     }
 

@@ -1,8 +1,10 @@
 package structuralPatterns.builder;
 
+import com.oracle.webservices.internal.api.message.ContentType;
 import structuralPatterns.Shape;
 import structuralPatterns.ShapeDecorator;
 import structuralPatterns.coordinates.Dimensions;
+import structuralPatterns.shape.Circle;
 import structuralPatterns.shape.Rectangle;
 
 /**
@@ -26,5 +28,10 @@ public class ShapeBuilder {
 
     public Shape build() {
         return mainShape;
+    }
+
+    public ShapeBuilder aCircle(int radius) {
+        mainShape = new Circle(radius);
+        return this;
     }
 }
