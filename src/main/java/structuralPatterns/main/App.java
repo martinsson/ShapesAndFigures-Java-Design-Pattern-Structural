@@ -6,6 +6,7 @@ import structuralPatterns.coordinates.Dimensions;
 import structuralPatterns.coordinates.Position;
 import structuralPatterns.decorators.Border;
 import structuralPatterns.decorators.Shade;
+import structuralPatterns.figure.CompositeFigure;
 import structuralPatterns.figure.LeafFigure;
 
 public class App {
@@ -17,36 +18,39 @@ public class App {
     }
 
     public  void runIt() {
-        int yposition = 12;
-        int xposition = 13;
-        Position position = new Position(yposition, xposition);
-
-
-        int height = 250;
-        int width = 400;
-        Dimensions dimensions = new Dimensions(width, height) ;
-        Shape complexRectangle = new ShapeBuilder()
-                .aRectangle(dimensions)
-                .with(new Border())
-                .with(new Shade())
-                .build();
-
+        Shape complexRectangle = makeRectangle();
         Position figurePosition = new Position(1, 1);
         LeafFigure figure = new LeafFigure(complexRectangle, figurePosition);
+
+        Shape complexCircle = makeCircle();
+        LeafFigure figure2 = new LeafFigure(complexCircle, figurePosition);
+
+        CompositeFigure compositeFigure = new CompositeFigure(figure, figure2, figurePosition);
+
+        Position position = new Position(12, 13);
+        compositeFigure.drawAt(position);
+        System.out.println();
+
+    }
+
+    private Shape makeCircle() {
         int radius = 40;
-        Shape complexCircle = new ShapeBuilder()
+        return new ShapeBuilder()
                 .aCircle(radius)
                 .with(new Border())
                 .with(new Shade())
                 .build();
-        LeafFigure figure2 = new LeafFigure(complexCircle, figurePosition);
+    }
 
-
-        figure2.drawAt(position);
-        System.out.println();
-
-        figure.drawAt(position);
-        System.out.println();
+    private Shape makeRectangle() {
+        int height = 250;
+        int width = 400;
+        Dimensions dimensions = new Dimensions(width, height) ;
+        return new ShapeBuilder()
+                .aRectangle(dimensions)
+                .with(new Border())
+                .with(new Shade())
+                .build();
     }
 
 
