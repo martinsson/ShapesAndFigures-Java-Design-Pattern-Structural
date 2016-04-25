@@ -21,9 +21,9 @@ public class App {
         drawShape(position, new Circle(10));
     }
 
-    private void drawShape(Position position, Shape rectangle) {
+    private void drawShape(Position position, Shape shape) {
 
-        rectangle.drawAt(position);
+        shape.drawAt(position);
     }
 
 

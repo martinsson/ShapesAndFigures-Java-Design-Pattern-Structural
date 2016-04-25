@@ -13,7 +13,7 @@ public class Dimensions {
 
     @Override
     public String toString() {
-        return "Dimensions{" +
+        return "{" +
                 "width=" + width +
                 ", height=" + height +
                 '}';

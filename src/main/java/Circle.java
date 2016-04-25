@@ -12,8 +12,8 @@ public class Circle implements Shape{
     }
 
     public void drawAt(Position position) {
-        System.out.print("Circle ");
-        System.out.println("Drawn at " + position.toString());
+        System.out.println("Circle with radius " + radius);
+        System.out.println(" Drawn at " + position.toString());
 
     }
 }

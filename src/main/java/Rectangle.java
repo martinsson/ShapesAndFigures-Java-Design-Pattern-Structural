@@ -13,7 +13,7 @@ public class Rectangle implements Shape {
     }
 
     public void drawAt(Position position) {
-        System.out.print("Rectangle with dimensions "  + dimensions.toString() + " ");
-        System.out.println("Drawn at " + position.toString());
+        System.out.println("Rectangle with dimensions "  + dimensions.toString() + " ");
+        System.out.println(" Drawn at " + position.toString());
     }
 }
