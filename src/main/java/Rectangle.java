@@ -5,6 +5,10 @@ import shapes.Position;
  */
 public class Rectangle implements Shape {
 
+    public Rectangle(Dimensions dimensions) {
+
+    }
+
     public void drawAt(Position position) {
         System.out.print("Rectangle ");
         System.out.println("Drawn at " + position.toString());

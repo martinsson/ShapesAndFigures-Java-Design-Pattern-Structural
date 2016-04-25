@@ -9,8 +9,19 @@ public class App {
     }
 
     public void runIt(Position position) {
-        new Rectangle().drawAt(position);
-        new Circle().drawAt(position);
+        int height = 44;
+        int width = 30;
+        Dimensions dimensions = new Dimensions(width, height);
+        Rectangle rectangle = new Rectangle(dimensions);
+        int radius = 3;
+        Circle circle = new Circle(radius);
+
+        drawShape(position, rectangle);
+        drawShape(position, circle);
+    }
+
+    private void drawShape(Position position, Shape rectangle) {
+        rectangle.drawAt(position);
     }
 
 
