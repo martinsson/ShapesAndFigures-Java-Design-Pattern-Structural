@@ -1,6 +1,4 @@
-package shape.decorators;
-
-import shapes.Shape;
+package structuralPatterns;
 
 /**
  * Created by johan on 25/04/16.

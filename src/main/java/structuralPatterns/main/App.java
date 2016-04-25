@@ -1,13 +1,13 @@
-package main;
+package structuralPatterns.main;
 
-import coordinates.Position;
-import figure.Figure;
-import shape.decorators.Border;
-import shape.decorators.Shade;
-import shapes.Circle;
-import shapes.Rectangle;
-import shapes.Shape;
-import builder.ShapeBuilder;
+import structuralPatterns.coordinates.Position;
+import structuralPatterns.figure.Figure;
+import structuralPatterns.decorators.Border;
+import structuralPatterns.decorators.Shade;
+import structuralPatterns.shape.Circle;
+import structuralPatterns.shape.Rectangle;
+import structuralPatterns.Shape;
+import structuralPatterns.builder.ShapeBuilder;
 
 public class App {
 

@@ -1,6 +1,6 @@
-package shapes;
+package structuralPatterns;
 
-import coordinates.Position;
+import structuralPatterns.coordinates.Position;
 
 /**
  * Created by johan on 25/04/16.

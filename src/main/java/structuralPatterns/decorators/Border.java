@@ -1,7 +1,8 @@
-package shape.decorators;
+package structuralPatterns.decorators;
 
-import coordinates.Position;
-import shapes.Shape;
+import structuralPatterns.ShapeDecorator;
+import structuralPatterns.coordinates.Position;
+import structuralPatterns.Shape;
 
 /**
  * Created by johan on 25/04/16.

@@ -1,7 +1,7 @@
-package figure;
+package structuralPatterns.figure;
 
-import coordinates.Position;
-import shapes.Shape;
+import structuralPatterns.coordinates.Position;
+import structuralPatterns.Shape;
 
 /**
  * Created by johan on 25/04/16.

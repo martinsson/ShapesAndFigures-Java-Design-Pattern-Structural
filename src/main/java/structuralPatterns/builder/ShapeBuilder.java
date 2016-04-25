@@ -1,8 +1,8 @@
-package builder;
+package structuralPatterns.builder;
 
-import shape.decorators.ShapeDecorator;
-import shapes.Rectangle;
-import shapes.Shape;
+import structuralPatterns.Shape;
+import structuralPatterns.ShapeDecorator;
+import structuralPatterns.shape.Rectangle;
 
 /**
  * Created by johan on 25/04/16.

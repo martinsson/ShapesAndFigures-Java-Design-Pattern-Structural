@@ -1,6 +1,7 @@
-package shapes;
+package structuralPatterns.shape;
 
-import coordinates.Position;
+import structuralPatterns.Shape;
+import structuralPatterns.coordinates.Position;
 
 /**
  * Created by johan on 25/04/16.
@@ -8,7 +9,7 @@ import coordinates.Position;
 public class Rectangle implements Shape {
 
     public void drawAt(Position position) {
-        System.out.print("shapes.Rectangle ");
+        System.out.print("structuralPatterns.shape.Rectangle ");
         System.out.println("Drawn at " + position.toString());
     }
 }
