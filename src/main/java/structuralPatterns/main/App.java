@@ -12,13 +12,14 @@ import structuralPatterns.builder.ShapeBuilder;
 public class App {
 
     public static void main(String...args) {
-        int yposition = 0;
-        int xposition = 0;
-        new App().runIt(new Position(yposition, xposition));
+        App app = new App();
+        app.runIt();
     }
 
-    public void runIt(Position position) {
-
+    private  void runIt() {
+        int yposition = 0;
+        int xposition = 0;
+        Position position = new Position(yposition, xposition);
 
 
         Shape complexShape = new ShapeBuilder()
@@ -31,15 +32,6 @@ public class App {
         Position figurePosition = new Position(2, 3);
         new Figure(complexShape, figurePosition);
 
-        System.out.println();
-
-        new Shade(new Border(new Rectangle()))
-                .drawAt(position);
-
-        System.out.println();
-        new Rectangle().drawAt(position);
-        System.out.println();
-        new Circle().drawAt(position);
         System.out.println();
     }
 
