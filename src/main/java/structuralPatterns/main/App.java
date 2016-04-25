@@ -16,8 +16,8 @@ public class App {
     }
 
     public  void runIt() {
-        int yposition = 0;
-        int xposition = 0;
+        int yposition = 12;
+        int xposition = 13;
         Position position = new Position(yposition, xposition);
 
 
@@ -29,10 +29,10 @@ public class App {
                 .with(new Border())
                 .with(new Shade()).build();
 
-        Position figurePosition = new Position(0, 0);
+        Position figurePosition = new Position(1, 1);
         LeafFigure figure = new LeafFigure(complexShape, figurePosition);
 
-        figure.drawAt(figurePosition);
+        figure.drawAt(position);
 
 
         System.out.println();
