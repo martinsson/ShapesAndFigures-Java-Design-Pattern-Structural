@@ -6,6 +6,7 @@ import structuralPatterns.coordinates.Dimensions;
 import structuralPatterns.coordinates.Position;
 import structuralPatterns.decorators.Border;
 import structuralPatterns.decorators.Shade;
+import structuralPatterns.figure.LeafFigure;
 
 public class App {
 
@@ -14,7 +15,7 @@ public class App {
         app.runIt();
     }
 
-    private  void runIt() {
+    public  void runIt() {
         int yposition = 0;
         int xposition = 0;
         Position position = new Position(yposition, xposition);
@@ -28,10 +29,10 @@ public class App {
                 .with(new Border())
                 .with(new Shade()).build();
 
-        complexShape.drawAt(position);
+        Position figurePosition = new Position(0, 0);
+        LeafFigure figure = new LeafFigure(complexShape, figurePosition);
 
-        Position figurePosition = new Position(2, 3);
-//        Figure figure = new Figure(complexShape, figurePosition);
+        figure.drawAt(figurePosition);
 
 
         System.out.println();
