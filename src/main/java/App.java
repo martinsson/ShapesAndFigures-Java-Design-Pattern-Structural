@@ -9,8 +9,12 @@ public class App {
     }
 
     public void runIt(Position position) {
+        new Shade(new Border(new Rectangle())).drawAt(position);
+        System.out.println();
         new Rectangle().drawAt(position);
+        System.out.println();
         new Circle().drawAt(position);
+        System.out.println();
     }
 
 
